@@ -1,0 +1,56 @@
+Patient ID,Consultation Date,Admission Date,Discharge Date,Clinical Note,Diagnosis,Physician
+P001,10-09-2025,12-09-2025,15-09-2025,"Fatigue, weight loss, hypercalcemia. Suspected parathyroid adenoma.",Endocrine disorder,Dr. A. Sen
+P002,22-08-2025,23-08-2025,25-08-2025,STEMI treated with PCI and stent. On dual antiplatelet therapy.,Cardiac infarction,Dr. R. Mehta
+P003,05-07-2025,,," ""Type 2 diabetes  HbA1c 8.2%. Prescribed metformin.""",Diabetes mellitus,Dr. S. Roy
+P004,18-06-2025,20-06-2025,27-06-2025,KRAS G12D mutation in metastatic CRC. No prior anti-EGFR therapy.,Colorectal cancer,Dr. T. Das
+P005,30-05-2025,01-06-2025,05-06-2025,"Chronic cough, dyspnea. CT shows ground-glass opacities.",Interstitial lung disease,Dr. N. Ghosh
+P006,08-05-2025,05-06-2025,07-06-2025,Tremors and bradykinesia. Diagnosed with Parkinson’s disease.,Parkinson’s disease,Dr. P. Pal
+P007,21-04-2025,22-04-2025,25-04-2025,Joint pain and morning stiffness. Positive RF and anti-CCP.,Rheumatoid arthritis,Dr. B. Bose
+P008,30-03-2025,01-04-2025,05-04-2025,"Fever, night sweats, weight loss. TB suspected.",Tuberculosis,Dr. L. Shaw
+P009,15-03-2025,16-03-2025,20-03-2025,Abdominal pain and bloody stools. Colonoscopy reveals ulcerative colitis.,Inflammatory bowel disease,Dr. D. Banerjee
+P010,28-02-2025,,," ""Anhedonia  insomnia  low mood. Started on SSRI.""",Depression,Dr. H. Dutta
+P011,15-02-2025,,," ""Syncope and dizziness. ECG shows arrhythmia.""",Arrhythmia,Dr. U. Joshi
+P012,01-02-2025,02-02-2025,04-02-2025,Multiple myeloma suspected. Elevated serum protein.,Hematologic malignancy,Dr. C. Khan
+P013,20-01-2025,21-01-2025,25-01-2025,Hypertension with end-organ damage. Started on ACE inhibitors.,Hypertension,Dr. M. Paul
+P014,05-01-2025,,," ""Acute pancreatitis. Elevated lipase and abdominal pain.""",Pancreatitis,Dr. V. Rao
+P015,04-01-2025,,," ""Dyspnea and effort angina. ECG shows ST depression.""",Coronary artery disease,Dr. J. Wilson
+P016,24-09-2025,25-09-2025,28-09-2025,COPD exacerbation. Nebulized bronchodilators administered.,Chronic obstructive pulmonary disease,Dr. A. Sen
+P017,20-09-2025,,," ""Psoriatic plaques on elbows and knees. Started topical steroids.""",Psoriasis,Dr. S. Roy
+P018,18-09-2025,19-09-2025,21-09-2025,Epigastric pain and melena. Suspected gastric ulcer.,Peptic ulcer,Dr. R. Mehta
+P019,15-09-2025,,," ""Effort angina and exertional dyspnea. Positive stress test.""",Angina,Dr. N. Ghosh
+P020,12-09-2025,13-09-2025,15-09-2025,Productive cough and fever. Chest X-ray shows consolidation.,Pneumonia,Dr. P. Singh
+P021,10-09-2025,12-09-2025,14-09-2025,STEMI treated with PCI and stent. On dual antiplatelet therapy.,Cardiac infarction,Dr. T. Das
+P022,08-09-2025,,," ""Wheezing and shortness of breath. Diagnosed with asthma.""",Asthma,Dr. M. Sarkar
+P023,05-09-2025,06-09-2025,08-09-2025,Facial pain and nasal congestion. Diagnosed with chronic sinusitis.,Sinusitis,Dr. U. Sharma
+P024,02-09-2025,03-09-2025,06-09-2025,KRAS G12D mutation in metastatic CRC. No prior anti-EGFR therapy.,Colorectal cancer,Dr. H. Banerjee
+P025,30-08-2025,,," ""Esophageal varices. History of cirrhosis.""",Portal hypertension,Dr. D. Basu
+P026,28-08-2025,29-08-2025,31-08-2025,Joint pain and morning stiffness. Positive RF and anti-CCP.,Rheumatoid arthritis,Dr. R. Gupta
+P027,25-08-2025,26-08-2025,28-08-2025,Ground-glass opacities on CT. Suspected ILD.,Interstitial lung disease,Dr. K. Mitra
+P029,20-08-2025,21-08-2025,23-08-2025,"Fever, night sweats, weight loss. TB suspected.",Tuberculosis,Dr. E. Bose
+P030,18-08-2025,,," ""Closed soft tissue injury right leg. No fracture.""",Contusion,Dr. J. Nandi
+P031,15-08-2025,16-08-2025,18-08-2025,Colonoscopy reveals ulcerative colitis.,Inflammatory bowel disease,Dr. I. Deb
+P032,12-08-2025,,," ""Dyspnea and effort angina. ECG shows ST depression.""",Coronary artery disease,Dr. Y. Chowdhury
+P033,10-08-2025,,," ""Abdominal pain and melena. Suspected gastric ulcer.""",Peptic ulcer,Dr. H. Mukherjee
+P034,08-08-2025,09-08-2025,11-08-2025,Elevated LFTs. Suspected hepatic cirrhosis.,Liver disease,Dr. N. Ghosh
+P035,05-08-2025,,," ""Obesity and metabolic syndrome. Advised lifestyle changes.""",Metabolic syndrome,Dr. M. Dutta
+P036,02-08-2025,03-08-2025,05-08-2025,Hemophilia A. Factor VIII replacement initiated.,Bleeding disorder,Dr. P. Paul
+P037,30-07-2025,,," ""Sleep apnea. Advised CPAP therapy.""",Obstructive sleep apnea,Dr. F. Sinha
+P038,28-07-2025,,," ""Elevated LFTs. Suspected hepatic steatosis.""",Fatty liver disease,Dr. C. Mandal
+P039,25-07-2025,,," ""Bronchitis with wheezing. Prescribed inhalers.""",Bronchitis,Dr. D. Pal
+P040,22-07-2025,,," ""Bipolar disorder. Mood stabilizers initiated.""",Bipolar disorder,Dr. L. Sen
+P041,20-07-2025,,," ""Migraine with aura. Prescribed triptans.""",Migraine,Dr. H. Saha
+P042,18-07-2025,,," ""Hematuria. Suspected UTI.""",Urinary tract infection,Dr. U. Saha
+P043,15-07-2025,,," ""Stroke with left-sided weakness. CT confirms infarct.""",Ischemic stroke,Dr. K. Talukdar
+P044,12-07-2025,,," ""COPD exacerbation. Nebulized bronchodilators administered.""",Chronic obstructive pulmonary disease,Dr. S. Mukherjee
+P045,10-07-2025,,," ""Peptic ulcer confirmed by endoscopy.""",Peptic ulcer,Dr. B. Ghosh
+P046,08-07-2025,,," ""Chronic kidney disease stage 3. Advised nephrology follow-up.""",CKD,Dr. K. Ghose
+P047,05-07-2025,,," ""Obesity and metabolic syndrome. Advised lifestyle changes.""",Metabolic syndrome,Dr. A. Majumder
+P048,02-07-2025,,," ""Insomnia and anxiety. Prescribed benzodiazepines.""",Sleep disorder,Dr. G. Choudhury
+P049,30-06-2025,,," ""Gastritis with nausea and vomiting. Prescribed H2 blockers.""",Gastritis,Dr. R. Sen
+P051,25-06-2025,,," ""Hyperthyroidism. Radioiodine treatment planned.""",Thyroid disorder,Dr. M. Pal
+P052,22-06-2025,,," ""Migraine with aura. Prescribed triptans.""",Migraine,Dr. H. Saha
+P053,20-06-2025,,," ""Dyspnea and chest pain. Suspected PE.""",Pulmonary embolism,Dr. U. Saha
+P055,15-06-2025,,," ""Anxiety and panic attacks. Prescribed SSRI.""",Anxiety disorder,Dr. J. Nandi
+P056,12-06-2025,,," ""Chronic kidney disease stage 3. Advised nephrology follow-up.""",CKD,Dr. K. Ghose
+P057,10-06-2025,,," ""Obesity and metabolic syndrome. Advised lifestyle changes.""",Metabolic syndrome,Dr. A. Majumder
+P058,08-06-2025,,," ""Insomnia and anxiety. Prescribed benzodiazepines.""",Sleep disorder,Dr. G. Choudhury

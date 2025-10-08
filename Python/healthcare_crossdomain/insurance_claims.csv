@@ -1,0 +1,91 @@
+Claim ID,Patient ID,Claim Date,Amount Claimed,Claim Description,Procedure Code,Status
+C1081,P001,18-09-2025,55000,Orthopedic surgery for knee replacement.,ORTHO-501,Rejected
+C1082,P004,30-06-2025,62000,Psychiatric evaluation and SSRI therapy.,PSYCH-103,Rejected
+C1083,P005,09-06-2025,48000,Dental extraction and root canal treatment.,DENT-201,Rejected
+C1084,P009,22-03-2025,39000,Pulmonary rehab and oxygen therapy.,PULM-230,Rejected
+C1085,P012,06-02-2025,75000,Cardiac stent placement and ICU monitoring.,CARD-212,Rejected
+C1086,P017,23-09-2025,28000,Gastrointestinal endoscopy and ulcer management.,GI-215,Rejected
+C1087,P020,16-09-2025,41000,Oncology consult and chemotherapy initiation.,ONCO-325,Rejected
+C1088,P025,03-09-2025,33000,Psychiatric therapy for bipolar disorder.,PSYCH-110,Rejected
+C1089,P031,19-08-2025,29000,Orthopedic imaging and fracture management.,ORTHO-301,Rejected
+C1090,P045,12-07-2025,36000,Neurology consult for epilepsy and seizure control.,NEURO-320,Rejected
+C1001,P001,16-09-2025,45000,Treatment for parathyroid disorder with calcium imbalance.,ENDO-401,Approved
+C1002,P002,26-08-2025,120000,Angioplasty and stent placement post myocardial infarction.,CARD-210,Approved
+C1003,P003,06-07-2025,12000,Oral hypoglycemic therapy and diabetic counseling.,DIAB-110,Pending
+C1004,P004,28-06-2025,85000,KRAS-mutated CRC trial eligibility check.,ONCO-305,Rejected
+C1005,P005,06-06-2025,30000,Diagnostic imaging and management of interstitial lung disease.,PULM-220,Approved
+C1006,P001,17-09-2025,15000,Calcium level monitoring and endocrine consultation.,ENDO-402,Approved
+C1007,P002,27-08-2025,8000,Follow-up ECG and cardiac rehab session.,CARD-215,Pending
+C1008,P003,08-07-2025,5000,Nutrition counseling for diabetic patient.,DIAB-115,Approved
+C1009,P004,29-06-2025,40000,Genetic testing for KRAS mutation.,ONCO-310,Approved
+C1010,P005,07-06-2025,10000,Pulmonary function test and oxygen therapy.,PULM-225,Approved
+C1011,P006,08-06-2025,25000,Neurology consult and Parkinson’s medication.,NEURO-201,Approved
+C1012,P007,26-04-2025,18000,Rheumatology panel and DMARD initiation.,RHEUM-110,Approved
+C1013,P008,06-04-2025,22000,TB diagnostic procedures and anti-TB therapy.,INF-101,Approved
+C1014,P009,21-03-2025,35000,Ulcerative colitis management and colonoscopy.,GASTRO-301,Approved
+C1015,P010,01-03-2025,15000,Depression treatment with SSRIs and psychotherapy.,PSYCH-101,Approved
+C1016,P011,16-02-2025,9000,Arrhythmia monitoring and Holter test.,CARD-220,Approved
+C1017,P012,05-02-2025,48000,Bone marrow biopsy and hematology consult.,HEME-305,Approved
+C1018,P013,26-01-2025,11000,Hypertension management and renal panel.,CARD-110,Approved
+C1019,P014,06-01-2025,27000,Pancreatitis treatment and abdominal imaging.,GI-210,Approved
+C1020,P015,07-01-2025,40000,Stress test and coronary angiography.,CARD-310,Approved
+C1021,P016,29-09-2025,32000,COPD exacerbation management and nebulization.,PULM-230,Approved
+C1022,P017,21-09-2025,8000,Topical steroid therapy for psoriasis.,DERM-101,Approved
+C1023,P018,19-09-2025,15000,Endoscopy and ulcer management.,GI-215,Approved
+C1024,P019,16-09-2025,18000,Cardiology consult and angina medication.,CARD-115,Approved
+C1025,P020,13-09-2025,22000,Pneumonia treatment and chest X-ray.,RESP-101,Approved
+C1026,P021,15-09-2025,125000,PCI and stent placement for STEMI.,CARD-210,Approved
+C1027,P022,09-09-2025,9000,Asthma management and inhaler prescription.,RESP-110,Approved
+C1028,P023,07-09-2025,7000,Sinusitis treatment and nasal endoscopy.,ENT-101,Approved
+C1029,P024,04-09-2025,88000,Colorectal cancer genetic profiling.,ONCO-320,Approved
+C1030,P025,01-09-2025,42000,Esophageal varices banding procedure.,GI-310,Approved
+C1031,P026,30-08-2025,19000,Rheumatoid arthritis follow-up and lab tests.,RHEUM-120,Approved
+C1032,P027,27-08-2025,26000,ILD management and oxygen therapy.,PULM-240,Approved
+C1033,P028,24-08-2025,16000,Psychiatric evaluation and SSRI prescription.,PSYCH-105,Approved
+C1034,P029,22-08-2025,21000,TB sputum test and chest imaging.,INF-102,Approved
+C1035,P030,20-08-2025,6000,Soft tissue injury dressing and follow-up.,ORTHO-101,Approved
+C1036,P031,17-08-2025,34000,Ulcerative colitis medication and colonoscopy.,GASTRO-302,Approved
+C1037,P032,14-08-2025,39000,Coronary artery disease evaluation and stress test.,CARD-320,Approved
+C1038,P033,11-08-2025,17000,Gastric ulcer management and PPI therapy.,GI-220,Approved
+C1039,P034,08-08-2025,28000,Liver function panel and cirrhosis evaluation.,GI-330,Approved
+C1040,P035,05-08-2025,12000,Metabolic syndrome counseling and labs.,ENDO-410,Approved
+C1041,P036,02-08-2025,25000,Hemophilia A factor replacement therapy.,HEME-401,Approved
+C1042,P037,31-07-2025,18000,Sleep study and CPAP device prescription.,NEURO-301,Approved
+C1043,P038,29-07-2025,22000,Liver ultrasound and steatosis evaluation.,GI-340,Approved
+C1044,P039,26-07-2025,9000,Bronchitis treatment and inhaler prescription.,RESP-120,Approved
+C1045,P040,23-07-2025,16000,Mood stabilizers and psychiatric consult.,PSYCH-110,Approved
+C1046,P041,21-07-2025,7000,Migraine management and triptan therapy.,NEURO-205,Approved
+C1047,P042,19-07-2025,8000,Urinalysis and UTI medication.,URO-101,Approved
+C1048,P043,16-07-2025,48000,Stroke imaging and neurology consult.,NEURO-310,Approved
+C1049,P044,13-07-2025,32000,COPD management and nebulization.,PULM-250,Approved
+C1050,P045,11-07-2025,15000,Endoscopy and ulcer treatment.,GI-225,Approved
+C1051,P046,09-07-2025,27000,CKD evaluation and nephrology referral.,NEPH-101,Approved
+C1052,P047,06-07-2025,11000,Metabolic syndrome labs and counseling.,ENDO-415,Approved
+C1053,P048,03-07-2025,13000,Sleep disorder assessment and medication.,NEURO-315,Approved
+C1054,P049,01-07-2025,20000,GERD management and PPI therapy.,GI-350,Approved
+C1055,P050,29-06-2025,40000,ADHD behavioral therapy and school consult.,NEURO-101,Approved
+C1056,P001,18-09-2025,12000,Endocrine follow-up and lab tests.,ENDO-403,Approved
+C1057,P002,28-08-2025,9500,Cardiac rehab and medication review.,CARD-216,Approved
+C1058,P003,09-07-2025,6000,Diabetes foot exam and podiatry consult.,DIAB-120,Approved
+C1059,P004,30-06-2025,30000,Oncology imaging and biopsy.,ONCO-315,Approved
+C1060,P005,08-06-2025,15000,Pulmonary rehab and oxygen therapy.,PULM-226,Approved
+C1061,P006,09-06-2025,18000,Parkinson’s physical therapy sessions.,NEURO-202,Approved
+C1062,P007,27-04-2025,14000,RA medication refill and blood tests.,RHEUM-111,Approved
+C1063,P008,07-04-2025,26000,TB medication and follow-up imaging.,INF-103,Approved
+C1064,P009,22-03-2025,37000,Ulcerative colitis flare-up management.,GASTRO-303,Approved
+C1065,P010,02-03-2025,17000,Psychotherapy and SSRI adjustment.,PSYCH-102,Approved
+C1066,P011,17-02-2025,10000,Arrhythmia medication and cardiology follow-up.,CARD-221,Approved
+C1067,P012,06-02-2025,52000,Hematology consult and bone marrow aspiration.,HEME-306,Approved
+C1068,P013,27-01-2025,13000,Hypertension medication and ECG.,CARD-111,Approved
+C1069,P014,07-01-2025,29000,Pancreatitis imaging and IV fluids.,GI-211,Approved
+C1070,P015,08-01-2025,42000,Coronary angiography and medication.,CARD-311,Approved
+C1071,P016,30-09-2025,34000,COPD follow-up and pulmonary function test.,PULM-231,Approved
+C1072,P017,22-09-2025,9000,Psoriasis dermatology consult.,DERM-102,Approved
+C1073,P018,20-09-2025,16000,Ulcer medication and dietary counseling.,GI-216,Approved
+C1074,P019,17-09-2025,19000,Angina medication and cardiology review.,CARD-116,Approved
+C1075,P020,14-09-2025,24000,Pneumonia antibiotics and imaging.,RESP-102,Approved
+C1076,P021,16-09-2025,128000,Cardiac stent and ICU stay.,CARD-211,Approved
+C1077,P022,10-09-2025,10000,Asthma inhaler and spirometry.,RESP-111,Approved
+C1078,P023,08-09-2025,7500,Sinusitis antibiotics and ENT consult.,ENT-102,Approved
+C1079,P024,05-09-2025,90000,CRC chemotherapy initiation.,ONCO-321,Approved
+C1080,P025,02-09-2025,44000,Esophageal varices follow-up and labs.,GI-311,Approved

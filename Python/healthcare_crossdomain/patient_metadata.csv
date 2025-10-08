@@ -1,0 +1,27 @@
+Entity Name,Attribute Name,Data Type,Description,Foreign Key Relationship
+patient_demography,Patient ID,String,Unique identifier for the patient,Primary key
+patient_demography,Name,String,Full name of the patient,
+patient_demography,Address,String,Residential address,
+patient_demography,Income,Integer,Annual income in INR,
+patient_demography,Occupation,String,Patient's current or past profession,
+patient_demography,Education Level,String,Highest level of education attained,
+clinical_notes,Patient ID,String,Identifier linking clinical note to patient,References patient_demography.Patient ID
+clinical_notes,Consultation Date,Date,Date of outpatient consultation,
+clinical_notes,Admission Date,Date,Date of hospital admission,
+clinical_notes,Discharge Date,Date,Date of hospital discharge,
+clinical_notes,Clinical Note,Text,Summary of symptoms, findings, and clinical impressions,
+clinical_notes,Diagnosis,String,Primary diagnosis,
+clinical_notes,Physician,String,Name of attending physician,
+insurance_claims,Claim ID,String,Unique identifier for the insurance claim,Primary key
+insurance_claims,Patient ID,String,Identifier linking claim to patient,References patient_demography.Patient ID
+insurance_claims,Claim Date,Date,Date the claim was submitted,
+insurance_claims,Amount Claimed,Integer,Amount requested for reimbursement,
+insurance_claims,Claim Description,Text,Summary of treatment or procedure being claimed,
+insurance_claims,Procedure Code,String,Standardized code for the medical procedure,
+insurance_claims,Status,String,Claim status (e.g., Approved, Rejected, Pending),
+billing_records,Invoice ID,String,Unique identifier for the billing invoice,Primary key
+billing_records,Claim ID,String,Identifier linking billing to insurance claim,References insurance_claims.Claim ID
+billing_records,Patient ID,String,Identifier linking billing to patient,References patient_demography.Patient ID
+billing_records,Billing Date,Date,Date the invoice was generated,
+billing_records,Billed Amount,Integer,Total amount billed for the procedure,
+billing_records,Payment Method,String,Mode of payment (e.g., Insurance, Cash, Credit Card, UPI),
