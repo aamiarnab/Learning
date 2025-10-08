@@ -1,0 +1,127 @@
+import pandas as pd
+from sklearn.preprocessing import StandardScaler
+from sklearn.cluster import KMeans
+import numpy as np
+import gradio as gr
+import google.generativeai as genai
+import os
+import json
+
+os.environ["GOOGLE_API_KEY"] = 
+
+# Takes prompt as input, call LLM and return response
+def call_llm(prompt):
+    
+    try:
+        genai.configure() 
+        model = genai.GenerativeModel('gemini-2.0-flash')
+        response = model.generate_content(prompt)
+    except Exception as e:
+        print(f"Error: Gemini API key might be invalid or there's a configuration issue.")
+        print(f"Details: {e}")
+
+    return response.text
+
+#Generate the prompt based on the input provided by the users. 
+#Append output instruction and return final prompt
+def generate_prompt(role, objective):
+    objective = "I am organizing a seminar on a new product. I want to identify \
+        who should I invite for most effective discussion"
+        
+    role = "Marketing Manager"
+    
+    with open("C:\mylearning\segmentation\metadata_json.json", "r") as f:
+        metadata = f.read()
+    
+    output_instruction = "Create a list of attibute that I should fit into my Kmeans model to\
+        score the customers as per the objective from the given metadata.Geneate the output  as a json string \
+            {table_name: table name, column_name = column name,\
+             influence: positive or negative influence for this objective\
+             reason: why this attibute is relevant for this objective, \
+             do not use any quotation mark, apostrophe or comma in the text, \
+             it should not break the downstream python code}"
+      
+    prompt = "Role: " + role +  " metadata: " + metadata + " Objective: " +  objective + " Output Instruction: " + output_instruction
+    return prompt
+
+
+##### Code for the customer ranking kmeans ####
+def customer_rank(feature_list):
+    # Step 1: Load dataset
+    df = pd.read_csv("customer_data.csv")  # Replace with your actual file
+    return df.sort_values(by="purchase_frequency", ascending=False)  
+    '''
+    # Step 2: Select and scale features
+    features = feature_list #select_features()
+    X = df[features]
+    scaler = StandardScaler()
+    X_scaled = scaler.fit_transform(X)
+    
+    # Step 3: Apply K-Means clustering
+    kmeans = KMeans(n_clusters=3, random_state=42)
+    df['cluster'] = kmeans.fit_predict(X_scaled)
+    
+    # Step 4: Compute distances to cluster centroids
+    distances = kmeans.transform(X_scaled)  # shape: [n_samples, n_clusters]
+    
+    # Step 5: Identify the highest-affinity cluster
+    # Assumption: highest-affinity cluster has highest average feature values
+    centroid_scores = kmeans.cluster_centers_.mean(axis=1)
+    high_affinity_cluster = np.argmax(centroid_scores)
+    
+    # Step 6: Rank customers by proximity to high-affinity centroid
+    df['affinity_score'] = -distances[:, high_affinity_cluster]  # negative distance = higher score
+    df['affinity_rank'] = df['affinity_score'].rank(method='dense', ascending=False).astype(int)
+    
+    # Step 7: Save ranked data
+    df_sorted = df.sort_values(by='affinity_rank')
+    df_sorted.to_csv("customer_affinity_ranking.csv", index=False)
+    
+    # Optional: Print top 10 high-affinity customers
+    print(df_sorted[['customer_id', 'affinity_score', 'affinity_rank']].head(10))
+    output_text = df_sorted[['customer_id', 'affinity_score', 'affinity_rank']].head(10)
+    return output_text
+    '''
+
+#Generate output for the feature list section
+def generate_feature_list_output(feature_list):
+    table_name = []
+    column_name = []
+    influence = []
+    reason =[]
+    for i in range(0, len(feature_list)):
+        table_name.append(feature_list[i]["table_name"])
+        column_name.append(feature_list[i]["column_name"])
+        influence.append(feature_list[i]["influence"])
+        reason.append(feature_list[i]["reason"])
+
+    feature_list_df = pd.DataFrame({"table_name": table_name, "column_name": column_name, 
+                                    "influence": influence, "reason": reason})
+    return feature_list_df
+
+#Handle gradio input and output
+def process_input(role, objective):
+    
+    prompt = generate_prompt(role, objective)
+    llm_response = call_llm(prompt)
+    feature_list = json.loads(llm_response[7:-3])
+
+    output = [customer_rank(feature_list), generate_feature_list_output(feature_list)]
+
+    return output
+
+# Gradio interface
+demo = gr.Interface(
+    fn=process_input,
+    inputs=[gr.Textbox(label="Your role"),
+            gr.Textbox(label="Enter your objective [provide relevant context for better result]")
+            ],
+    outputs= [
+              gr.DataFrame(label="Top 10 target"),
+              gr.DataFrame(label = "Feature list")
+             ],
+    title="Dynamic Segmentation",
+    description="Captures segmentation objectives and provide top 10 target customer."
+)
+
+demo.launch()
