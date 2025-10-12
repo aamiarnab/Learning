@@ -1,0 +1,36 @@
+Attribute Name,Type,Sample Value,Description,ML Impact,Model Usage
+hcp_id,String,HCP123456,Unique internal identifier for each HCP. Used for record linkage and deduplication. Not meaningful for clustering.,Neutral,Identification
+npi_number,String,1234567890,National Provider Identifier. Used for external data enrichment and compliance. Not useful for segmentation.,Neutral,Identification
+full_name,String,Dr. Ayesha Banerjee,Full legal name. Used for personalization and matching. Not used in modeling.,Neutral,Identification
+gender,String,Female,Demographic attribute. May influence engagement preferences or prescribing patterns.,Weak Positive,Feature
+date_of_birth,Date,22-08-1975,"Enables age calculation. Age often correlates with digital affinity, prescribing behavior.",Moderate Positive,Feature
+specialty,String,Cardiology,"Medical specialty. Core segmentation axis. Strongly influences content affinity, drug eligibility, and rep strategy.",Strong Positive,Feature
+sub_specialty,String,Interventional Cardiology,Enables hyper-targeting within specialties. Useful for fine-grained clustering.,Strong Positive,Feature
+practice_type,String,Hospital-affiliated,"Indicates setting. Impacts access, influence, and rep strategy.",Moderate Positive,Feature
+affiliated_institutions,Array[String],"[""Apollo Hospitals""]",Hospital or clinic affiliations. Used for network mapping and influence scoring. Can be encoded for clustering.,Moderate Positive,Feature
+location_city,String,Kolkata,Geographic segmentation. Useful for regional clustering and territory planning.,Moderate Positive,Feature
+location_state,String,West Bengal,Regional grouping. May correlate with regulatory constraints or formulary access.,Weak Positive,Feature
+location_sales_territory,String,East Zone Tier 1,Internal sales mapping. Used to filter data for territory-specific modeling.,Neutral,Filter
+prescribing_authority_drug_classes,Array[String],"[""Statins"",""Anticoagulants""]",Indicates therapeutic relevance. Strong signal for product-level segmentation.,Strong Positive,Feature
+formulary_access,Boolean,TRUE,Indicates ability to prescribe specific drugs. Impacts conversion likelihood.,Strong Positive,Feature
+license_number,String,WB1234567,Regulatory identifier. Used for compliance and credential verification. Not used in modeling.,Neutral,Identification
+license_expiry,Date,31-12-2026,Helps flag inactive profiles. Can be used to filter out expired licenses.,Neutral,Filter
+preferred_contact_channel,String,Email,Indicates outreach preference. Useful for channel-based clustering.,Moderate Positive,Feature
+rep_visits,Array[Object],"{date: ""2025-09-15"", rep_id: ""REP001""}",Tracks in-person engagement. Can be aggregated into visit frequency or recency.,Strong Positive,Feature
+digital_interactions,Array[Object],"{channel: ""Webinar"", engagement_score: 0.85}",Captures digital behavior. High impact on clustering for digital-first segmentation.,Strong Positive,Feature
+event_attendance,Array[Object],"{event_name: ""CME Summit"", date: ""2025-06-10""}",Tracks participation in medical events. Signals interest areas and potential for KOL development.,Moderate Positive,Feature
+content_affinity,Array[String],"[""Diabetes"",""Rare Disease""]",Inferred interest areas. Strong signal for personalization and clustering.,Strong Positive,Feature
+rx_volume_score,Float,0.92,Normalized prescribing activity. High-value segmentation driver.,Strong Positive,Feature
+influence_score,Float,0.78,AI-derived score based on network and publications. Key for KOL segmentation.,Strong Positive,Feature
+churn_risk,Float,0.35,Probability of disengagement. Useful for retention-focused clustering.,Moderate Positive,Feature
+next_best_action,String,Invite to webinar,AI-suggested action. Not used directly in unsupervised modeling.,Neutral,Filter
+sunshine_act_exposure,Boolean,TRUE,Indicates regulatory sensitivity. May be used to exclude sensitive profiles.,Neutral,Filter
+promotion_limit,Float,1500,Max allowable promotional spend. Can be used to segment by compliance risk.,Weak Positive,Feature
+opt_out_status,Boolean,FALSE,Indicates marketing opt-out. Used to filter out suppressed profiles.,Neutral,Filter
+created_at,DateTime,2024-01-01T10:00:00Z,Metadata for audit trail. Not used in modeling.,Neutral,Identification
+updated_at,DateTime,2025-10-12T22:00:00Z,Timestamp of last update. Can be used to filter stale records.,Neutral,Filter
+source_system,String,CRM_Salesforce,Origin of data. Used for lineage tracking. Not useful for segmentation.,Neutral,Identification
+data_quality_score,Float,0.88,AI-assessed score. Can be used to filter low-quality records.,Weak Positive,Filter
+tags,Array[String],"[""High Touch"",""Digital First""]",Manual or AI-generated labels. Can be used to validate clustering outputs.,Neutral,Filter
+segment_membership,Array[String],"[""Influential Prescribers""]","Dynamic segment inclusion. Used for campaign targeting, not modeling.",Neutral,Filter
+notes,String,Prefers case studies over brochures.,Free-text insights. Not used directly in modeling unless NLP is applied.,Neutral,Identification
